@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-$ ansible-galaxy install arillso.
+$ ansible-galaxy install skeleton.
 ```
 
 ## Requirements
@@ -24,7 +24,7 @@ $ ansible-galaxy install arillso.
 ```yml
 - hosts: all
   roles:
-     - arillso.
+     - skeleton.
 ```
 
 ## Changelog
