@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-$ ansible-galaxy install skeleton.
+$ ansible-galaxy install skeleton
 ```
 
 ## Requirements
@@ -24,7 +24,7 @@ $ ansible-galaxy install skeleton.
 ```yml
 - hosts: all
   roles:
-     - skeleton.
+     - skeleton
 ```
 
 ## Changelog
