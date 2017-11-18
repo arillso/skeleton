@@ -23,9 +23,6 @@ install:
 
 before_script:
 
-  # load submodule
-  - git submodule update --init
-
   # Check ansible version
   - ansible --version
 
@@ -37,10 +34,10 @@ before_script:
 
 script:
   # Ansible Lint check
-  - ansible-lint ansible-lint -R -r tests/lint-rules/ .
+  - ansible-lint -R -r tests/lint-rules/ .
 
   # YAML Lint check
-  - yamllint yamllint -c tests/yaml-lint/yamllint.yml .
+  - yamllint -c tests/yaml-lint/yamllint.yml .
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
