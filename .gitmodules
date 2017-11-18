@@ -1,4 +1,4 @@
-[submodule "tests"]
-	path = tests
-	url = https://github.com/arillso/tests.git
-	branch = master
+[submodule "tests"] 
+  path = tests 
+  url = https://github.com/arillso/tests.git 
+  branch = master
