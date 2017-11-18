@@ -12,6 +12,7 @@ addons:
       - python-pip
 
 install:
+
   # Install ansible
   - pip install ansible
 
@@ -20,6 +21,9 @@ install:
 
   # Install yamllint
   - pip install yamllint
+
+  # Install tests rules
+  - git submodule add https://github.com/arillso/tests tests
 
 before_script:
 
