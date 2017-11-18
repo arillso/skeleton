@@ -1,10 +1,12 @@
 # Ansible Role:
 
+[![Build Status](https://travis-ci.org/projectname/skeleton.svg?branch=master)](https://travis-ci.org/projectname/skeleton) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-skeleton-blue.svg)](https://galaxy.ansible.com/projectname/skeleton)
+
 ## Description
 
 ## Installation
 
-```
+```bash
 $ ansible-galaxy install skeleton
 ```
 
