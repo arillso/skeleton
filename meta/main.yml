@@ -1,6 +1,7 @@
 ---
 
 galaxy_info:
+  role_name: projectname
   author:
   description:
   company:
