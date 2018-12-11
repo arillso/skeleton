@@ -1,7 +1,6 @@
 # Ansible Role: skeleton
 
-[![Build Status](https://travis-ci.org/projectgroup/ansible.projectname.svg?branch=master)](https://travis-ci.org/projectgroup/ansible.projectname) [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-projectname-blue.svg)](https://galaxy.ansible.com/projectgroup/projectname)
-
+[![Build Status](https://img.shields.io/travis-ci/projectgroup/ansible.projectname.svg?branch=master&style=popout-square)](https://travis-ci.org/projectgroup/ansible.projectname) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=popout-square)](https://sbaerlo.ch/licence) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-projectname-blue.svg?style=popout-square)](https://galaxy.ansible.com/projectgroup/projectname) [![Ansible Role](https://img.shields.io/ansible/role/d/9234.svg?style=popout-square)](https://galaxy.ansible.com/projectgroup/projectname)
 ## Description
 
 ## Installation
