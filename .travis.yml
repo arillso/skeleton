@@ -36,7 +36,7 @@ before_script:
 
 script:
   # Ansible Lint check
-  - ansible-lint -R -r tests/ansible-lint/ .
+  # - ansible-lint -R -r tests/ansible-lint/ .
 
   # YAML Lint check
   - yamllint -c tests/yaml-lint/yamllint.yml .
