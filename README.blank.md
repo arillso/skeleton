@@ -14,11 +14,6 @@ ansible-galaxy install skeleton
 
 ## Role Variables
 
-| Variable             | Default     | Comments (type)                                   |
-| :---                 | :---        | :---                                              |
-| | | |
-| | | |
-
 ## Dependencies
 
 ## Example Playbook
@@ -26,14 +21,14 @@ ansible-galaxy install skeleton
 ```yml
 - hosts: all
   roles:
-     - skeleton
+    - skeleton
 ```
 
 ## Changelog
 
 ## Author
 
-* [Simon Bärlocher](https://sbaerlocher.ch)
+- [Simon Bärlocher](https://sbaerlocher.ch)
 
 ## License
 
