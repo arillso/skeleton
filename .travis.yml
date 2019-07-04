@@ -1,35 +1,48 @@
 ---
 language: python
-services: docker
+python: "2.7"
 
-env:
-  global:
-    - ROLE_NAME: projectname
-  matrix:
-    - MOLECULE_DISTRO: centos7
-    - MOLECULE_DISTRO: centos6
-    - MOLECULE_DISTRO: ubuntu1804
-    - MOLECULE_DISTRO: debian9
-    - MOLECULE_DISTRO: debian10
+# Use the new container infrastructure
+sudo: false
+
+# Install ansible
+addons:
+  apt:
+    packages:
+      - python-pip
 
 install:
-  - pip install molecule docker
+  # Install ansible
+  - pip install ansible
 
-  - git clone https://github.com/arillso/tests molecule/default/lint
+  # Install ansible-lint
+  - pip install ansible-lint
+
+  # Install yamllint
+  - pip install yamllint
+
+  # Install tests rules
+  - git submodule add https://github.com/arillso/tests tests
 
 before_script:
-  - cd ../
-  - mv ansible.$ROLE_NAME projectgroup.$ROLE_NAME
-  - cd projectgroup.$ROLE_NAME
+  # Check ansible version
+  - ansible --version
+
+  # Check ansible-lint version
+  - ansible-lint --version
+
+  # Check ansible-lint version
+  - yamllint --version
 
 script:
-  - molecule test
+  # Ansible Lint check
+  - ansible-lint -R -r tests/ansible-lint/ .
+
+  # YAML Lint check
+  - yamllint -c tests/yaml-lint/yamllint.yml .
 
 notifications:
-  webhooks:
-    urls:
-      - https://galaxy.ansible.com/api/v1/notifications/
-    on_success: always
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
   email:
     on_success: never
     on_failure: always
