@@ -24,8 +24,6 @@ ansible-galaxy install skeleton
     - skeleton
 ```
 
-## Changelog
-
 ## Author
 
 - [Simon Bärlocher](https://sbaerlocher.ch)
