@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    ansible_python_interpreter: auto_silent
+  tasks:
+    - name: 'Include projectgroup.projectname'
+      include_role:
+        name: 'projectgroup.projectname'
