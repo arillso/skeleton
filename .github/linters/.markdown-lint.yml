@@ -2,4 +2,4 @@
 default: true
 MD024: false
 MD013:
-  line_length: 240
+  line_length: 160
